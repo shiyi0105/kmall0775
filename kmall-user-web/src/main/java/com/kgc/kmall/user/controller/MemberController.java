@@ -24,4 +24,7 @@ public class MemberController {
         List<Member> members=memberService.selectAllMember();
         return members;
     }
+
+
+
 }
