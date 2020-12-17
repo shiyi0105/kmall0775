@@ -12,7 +12,9 @@
     <artifactId>kmall-service-util</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-
+    <properties>
+        <mybatis.version>2.1.2</mybatis.version>
+    </properties>
 
     <dependencies>
         <dependency>
