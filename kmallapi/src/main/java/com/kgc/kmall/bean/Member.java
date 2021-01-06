@@ -1,8 +1,11 @@
 package com.kgc.kmall.bean;
 
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
 import java.io.Serializable;
 import java.util.Date;
-
 public class Member implements Serializable{
     private Long id;
 

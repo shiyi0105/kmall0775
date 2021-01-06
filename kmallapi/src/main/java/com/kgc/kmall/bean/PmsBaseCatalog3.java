@@ -1,12 +1,12 @@
 package com.kgc.kmall.bean;
 
-import java.io.Serializable;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 
+import java.io.Serializable;
 public class PmsBaseCatalog3 implements Serializable{
     private Long id;
-
     private String name;
-
     private Long catalog2Id;
 
     public Long getId() {

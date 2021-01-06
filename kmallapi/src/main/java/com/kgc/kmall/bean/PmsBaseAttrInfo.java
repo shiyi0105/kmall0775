@@ -1,8 +1,10 @@
 package com.kgc.kmall.bean;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
 import java.io.Serializable;
 import java.util.List;
-
 public class PmsBaseAttrInfo implements Serializable {
     private Long id;
 

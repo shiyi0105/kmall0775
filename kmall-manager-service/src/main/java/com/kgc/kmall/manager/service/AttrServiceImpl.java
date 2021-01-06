@@ -27,6 +27,13 @@ public class AttrServiceImpl implements AttrService {
         PmsBaseAttrInfoExample.Criteria criteria = example.createCriteria();
         criteria.andCatalog3IdEqualTo(catalog3Id);
         List<PmsBaseAttrInfo> infoList = pmsBaseAttrInfoMapper.selectByExample(example);
+        for (PmsBaseAttrInfo pmsBaseAttrInfo : infoList) {
+            PmsBaseAttrValueExample pmsBaseAttrValueExample=new PmsBaseAttrValueExample();
+            PmsBaseAttrValueExample.Criteria criteria1 = pmsBaseAttrValueExample.createCriteria();
+            criteria1.andAttrIdEqualTo(pmsBaseAttrInfo.getId());
+            List<PmsBaseAttrValue> pmsBaseAttrValueList=pmsBaseAttrValueMapper.selectByExample(pmsBaseAttrValueExample);
+            pmsBaseAttrInfo.setAttrValueList(pmsBaseAttrValueList);
+        }
         return infoList;
     }
 

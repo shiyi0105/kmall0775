@@ -19,7 +19,7 @@ public interface PmsBaseAttrInfoMapper {
 
     List<PmsBaseAttrInfo> selectByExample(PmsBaseAttrInfoExample example);
 
-    PmsBaseAttrInfo selectByPrimaryKey(Long id);
+//    PmsBaseAttrInfo selectByPrimaryKey(Long id);
 
     int updateByExampleSelective(@Param("record") PmsBaseAttrInfo record, @Param("example") PmsBaseAttrInfoExample example);
 
